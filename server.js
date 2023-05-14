@@ -1,22 +1,6 @@
-const express = require("express");
-const { graphqlHTTP } = require("express-graphql");
-const {
-  GraphQLSchema,
-  GraphQLObjectType,
-  GraphQLString,
-} = require("graphql");
-
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: "HelloWorld",
-    fields: () => ({
-      message: {
-        type: GraphQLString,
-        resolve: () => "Hello World!",
-      },
-    }),
-  }),
-});
+import { graphqlHTTP } from "express-graphql";
+import express from "express";
+import schema from './schema.js';
 
 const app = express();
 app.use(
