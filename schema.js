@@ -1,9 +1,5 @@
-import {
-  GraphQLSchema,
-  GraphQLObjectType,
-  GraphQLString,
-} from "graphql";
-import RootQueryType from "./types/rootQuery.js";
+import { GraphQLSchema, GraphQLObjectType, GraphQLString } from "graphql";
+import RootQueryType from "./query/rootQuery";
 
 // const schema = new GraphQLSchema({
 //   query: new GraphQLObjectType({
