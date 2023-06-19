@@ -8,6 +8,14 @@ export const bookQueries = {
     description: "List of all Books",
     resolve: () => books,
   },
+  booksByAuthor: {
+    type: GraphQLList(BookType),
+    description: "List of Books by an Author",
+    args: {
+      id: { type: GraphQLInt, description: "id of the author" },
+    },
+    resolve: (_, args) => books.filter((book) => book.authorId === args.id),
+  },
   book: {
     type: BookType,
     description: "Single Book",

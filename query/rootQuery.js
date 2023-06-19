@@ -1,4 +1,4 @@
-import { GraphQLObjectType, GraphQLList, GraphQLInt } from "graphql";
+import { GraphQLObjectType } from "graphql";
 import { bookQueries } from "./bookQuery";
 import { authorQueries } from "./authorQuery";
 

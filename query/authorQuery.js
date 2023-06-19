@@ -14,6 +14,7 @@ export const authorQueries = {
     args: {
       id: { type: GraphQLInt, description: "id of the author" },
     },
-    resolve: (_, args) => authors.find((author) => author.id === args.id),
+    resolve: (parent, args) =>
+      authors.find((author) => author.id === (parent.authorId || args.id)),
   },
 };
