@@ -6,15 +6,20 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon --experimental-specifier-resolution=node server.js"
+    "devStart": "nodemon --experimental-specifier-resolution=node server.js",
+    "apolloStart": "nodemon --experimental-specifier-resolution=node ./node-apollo-server/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphql-tools/schema": "^10.0.0",
+    "apollo-server": "^3.12.0",
+    "colors": "^1.4.0",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
     "graphql": "^15.8.0",
-    "graphql-http": "^1.18.0"
+    "graphql-http": "^1.18.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
