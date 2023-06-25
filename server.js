@@ -12,6 +12,21 @@ app.use(
 );
 app.listen(8000, () => console.log("listening on port 8000"));
 
+/// GQL Videos
+// https://www.youtube.com/watch?v=Tcnon8qBCtw
+// https://www.youtube.com/watch?v=7JrwiBnjBPw
+// https://www.youtube.com/watch?v=EgVpTwpbeU4
+// https://www.youtube.com/watch?v=uPxo9NQLVMI
+// https://www.youtube.com/watch?v=ZQL7tL2S0oQ
+
+/// Learn GQL
+// https://graphql.org/learn
+// https://www.apollographql.com/
+// https://www.apollographql.com/blog/backend/schema-design/modularizing-your-graphql-schema-code/
+
+/// GQL apollo-server
+// https://snyk.io/advisor/npm-package/apollo-server/functions/apollo-server.makeExecutableSchema
+
 /// Public GQL APIs
 // https://www.apollographql.com/blog/community/backend/8-free-to-use-graphql-apis-for-your-projects-and-demos/
 // https://github.com/graphql-kit/graphql-apis
