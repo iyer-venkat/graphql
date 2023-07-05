@@ -20,3 +20,21 @@ const schema = new GraphQLSchema({
 });
 
 export default schema;
+
+/*
+{
+  leftComparison: author(id: 3) {
+    ...comparisonFields
+  }
+  rightComparison: author(id: 2) {
+    ...comparisonFields
+  }
+}
+
+fragment comparisonFields on Author {
+  name
+  books {
+    name
+  }
+}
+*/
